@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Add any additional styles or links here -->
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('img/img7.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-section">
+        <div class="wrapper-login">
+            <h2>Member Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Enter your email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Enter your password</label>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forget password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="register-link">
+                    <p>Not a member? <a href="#">Sign up now</a> or sign up with:</p>
+                    <div class="social-signup">
+                        <a href="https://www.facebook.com">Facebook</a>
+                        <a href="https://accounts.google.com/v3/signin/identifier?hl=en-gb&ifkv=ASKXGp2__5xGy1duqj8nWfT_gh1Gi60DH8_dKpwsJJLVpIS-QwTnH-hHxYfzWkr7qkAI6Kgl2oYDhQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S17412162%3A1703330426616999&theme=glif">Google</a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <!-- Add this script tag to your HTML file -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
